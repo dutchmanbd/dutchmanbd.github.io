@@ -459,7 +459,7 @@
             <!-- Filter Tabs -->
             <div class="flex flex-wrap gap-1.5 p-1.5 bg-surface-container rounded-xl border border-white/5" id="project-filters">
               <button class="filter-btn active px-3.5 py-1.5 rounded-lg font-mono text-[12px] bg-primary-container text-on-primary-container font-semibold transition-all" data-filter="all">
-                All (14+)
+                All (10)
               </button>
               <button class="filter-btn px-3.5 py-1.5 rounded-lg font-mono text-[12px] text-on-surface-variant hover:text-text-primary hover:bg-surface-card transition-all" data-filter="compose">
                 Jetpack Compose
@@ -476,106 +476,10 @@
             </div>
           </div>
 
-          <!-- Project Cards 3x3 Grid -->
+          <!-- Project Cards Grid (Sorted by Download Count Descending) -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="project-cards-container">
-            <!-- Card 1: ResumeIQ — Offline AI Interview Prep -->
-            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="compose enterprise">
-              <div>
-                <div class="flex items-center justify-between mb-4">
-                  <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-2.5 py-1 rounded-md bg-tag-compose/15 text-[#60a5fa] border-tag-compose/20 font-mono text-[11px] font-semibold border">Compose</span>
-                    <span class="px-2.5 py-1 rounded-md bg-primary/15 text-primary border-primary/20 font-mono text-[11px] font-semibold border">MVI</span>
-                    <span class="px-2.5 py-1 rounded-md bg-tertiary/20 text-tertiary-fixed border-tertiary/20 font-mono text-[11px] font-semibold border">Gemma 4 AI</span>
-                  </div>
-                  <span class="material-symbols-outlined text-secondary text-[22px]">psychology</span>
-                </div>
-                
-                <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
-                  ResumeIQ — Offline AI Interview Prep
-                </h3>
-                <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
-                  Generates tailored mock interview questions directly from the candidate's resume completely on-device without an active internet connection. Designed for university graduates and experienced tech professionals.
-                </p>
-                
-                <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
-                  <div class="text-secondary font-semibold">Engineering Highlights:</div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Embedded Gemma 4 AI model for zero-latency inference</span>
-                  </div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Clean MVI unidirectional state flow pattern</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
-                  <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                  </span>
-                  <span>Live Deployment</span>
-                </span>
-                <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
-                   href="https://play.google.com/store/apps/details?id=com.dutchman.resumeiq" rel="noreferrer" target="_blank">
-                  <span>Play Store</span>
-                  <span class="material-symbols-outlined text-[14px]">north_east</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Card 2: SAFE IN — AI Legal Defense & Guidance -->
-            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="flutter enterprise">
-              <div>
-                <div class="flex items-center justify-between mb-4">
-                  <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-2.5 py-1 rounded-md bg-tag-flutter/25 text-secondary border-tag-flutter/30 font-mono text-[11px] font-semibold border">Flutter</span>
-                    <span class="px-2.5 py-1 rounded-md bg-primary/15 text-primary border-primary/20 font-mono text-[11px] font-semibold border">MVI</span>
-                    <span class="px-2.5 py-1 rounded-md bg-surface-container border-white/10 text-on-surface-variant font-mono text-[11px] font-semibold border">Multi-Language</span>
-                  </div>
-                  <span class="material-symbols-outlined text-secondary text-[22px]">gavel</span>
-                </div>
-                
-                <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
-                  SAFE IN — AI Legal Defense & Guidance
-                </h3>
-                <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
-                  Automating legal defense rights and delivering proactive, AI-driven legal guidance to optimize corporate risk management and executive decision-making across enterprise operations.
-                </p>
-                
-                <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
-                  <div class="text-secondary font-semibold">Engineering Highlights:</div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Production Flutter architecture with unidirectional MVI pattern</span>
-                  </div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Dynamic multi-language localization & dependency injection</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
-                  <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                  </span>
-                  <span>Live Deployment</span>
-                </span>
-                <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
-                   href="https://play.google.com/store/apps/details?id=com.aicess.maisafe" rel="noreferrer" target="_blank">
-                  <span>Play Store</span>
-                  <span class="material-symbols-outlined text-[14px]">north_east</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Card 3: BTV Live — National Television Network -->
-            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="compose streaming">
+            <!-- Card 1: BTV Live — National Television Network (500K+) -->
+            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="compose streaming" data-downloads="500000">
               <div>
                 <div class="flex items-center justify-between mb-4">
                   <div class="flex flex-wrap items-center gap-2">
@@ -601,29 +505,143 @@
                   </div>
                   <div class="flex items-center gap-1.5">
                     <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Jetpack Compose UI with network recovery & auto-reconnect</span>
+                    <span>Jetpack Compose UI with network recovery &amp; auto-reconnect</span>
                   </div>
                 </div>
               </div>
               
-              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
-                  <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                    </span>
+                    <span>Live</span>
                   </span>
-                  <span>Live Deployment</span>
-                </span>
+                  <span class="px-2 py-0.5 rounded-md bg-secondary/10 border border-secondary/20 text-secondary font-mono text-[11px] font-semibold inline-flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[13px]">download</span>
+                    <span>500K+</span>
+                  </span>
+                </div>
                 <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
-                   href="https://play.google.com/store/apps/details?id=com.ticonsys.bangladeshtelevision" rel="noreferrer" target="_blank">
+                   href="https://play.google.com/store/apps/details?id=cm.btv.world" rel="noreferrer" target="_blank">
                   <span>Play Store</span>
                   <span class="material-symbols-outlined text-[14px]">north_east</span>
                 </a>
               </div>
             </div>
 
-            <!-- Card 4: Rabbithole — National Live Sports OTT -->
-            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="streaming">
+            <!-- Card 2: AmarStock — Stock Analytics Engine (100K+) -->
+            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="enterprise" data-downloads="100000">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="px-2.5 py-1 rounded-md bg-primary/15 text-primary border-primary/20 font-mono text-[11px] font-semibold border">Fintech</span>
+                    <span class="px-2.5 py-1 rounded-md bg-tag-webrtc/20 text-[#ff8080] border-tag-webrtc/20 font-mono text-[11px] font-semibold border">WebSocket</span>
+                    <span class="px-2.5 py-1 rounded-md bg-secondary/15 text-secondary border-secondary/20 font-mono text-[11px] font-semibold border">Room DB</span>
+                  </div>
+                  <span class="material-symbols-outlined text-secondary text-[22px]">trending_up</span>
+                </div>
+                
+                <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
+                  AmarStock — Stock Analytics Engine
+                </h3>
+                <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
+                  Comprehensive financial data application delivering real-time stock quotes, interactive technical chart analysis, and market sentiment summaries for equity traders.
+                </p>
+                
+                <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
+                  <div class="text-secondary font-semibold">Engineering Highlights:</div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
+                    <span>Resilient sub-second WebSocket feed with reconnection fallback</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
+                    <span>Single Source of Truth architecture combining Room DB &amp; WorkManager</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                    </span>
+                    <span>Live</span>
+                  </span>
+                  <span class="px-2 py-0.5 rounded-md bg-secondary/10 border border-secondary/20 text-secondary font-mono text-[11px] font-semibold inline-flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[13px]">download</span>
+                    <span>100K+</span>
+                  </span>
+                </div>
+                <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
+                   href="https://play.google.com/store/apps/details?id=com.amarstock.android" rel="noreferrer" target="_blank">
+                  <span>Play Store</span>
+                  <span class="material-symbols-outlined text-[14px]">north_east</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 3: Retina LMS — Medical & Dental Exam Prep (100K+) -->
+            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="flutter enterprise" data-downloads="100000">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="px-2.5 py-1 rounded-md bg-tag-flutter/25 text-secondary border-tag-flutter/30 font-mono text-[11px] font-semibold border">Flutter</span>
+                    <span class="px-2.5 py-1 rounded-md bg-primary/15 text-primary border-primary/20 font-mono text-[11px] font-semibold border">MVI</span>
+                    <span class="px-2.5 py-1 rounded-md bg-surface-container border-white/10 text-on-surface-variant font-mono text-[11px] font-semibold border">EdTech LMS</span>
+                  </div>
+                  <span class="material-symbols-outlined text-secondary text-[22px]">school</span>
+                </div>
+                
+                <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
+                  Retina LMS — Medical &amp; Dental Exam Prep
+                </h3>
+                <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
+                  Comprehensive learning management mobile platform for medical and dental admission candidates across Bangladesh, delivering recorded video lectures and practice tests.
+                </p>
+                
+                <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
+                  <div class="text-secondary font-semibold">Engineering Highlights:</div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
+                    <span>Custom Video &amp; YouTube player integration with adaptive streaming</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
+                    <span>Dio networking with JWT refresh interceptors and FCM notifications</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                    </span>
+                    <span>Live</span>
+                  </span>
+                  <span class="px-2 py-0.5 rounded-md bg-secondary/10 border border-secondary/20 text-secondary font-mono text-[11px] font-semibold inline-flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[13px]">download</span>
+                    <span>100K+</span>
+                  </span>
+                </div>
+                <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
+                   href="https://play.google.com/store/apps/details?id=com.retinalms" rel="noreferrer" target="_blank">
+                  <span>Play Store</span>
+                  <span class="material-symbols-outlined text-[14px]">north_east</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 4: Rabbithole — National Live Sports OTT (50K+) -->
+            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="streaming" data-downloads="50000">
               <div>
                 <div class="flex items-center justify-between mb-4">
                   <div class="flex flex-wrap items-center gap-2">
@@ -654,14 +672,20 @@
                 </div>
               </div>
               
-              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
-                  <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                    </span>
+                    <span>Live</span>
                   </span>
-                  <span>Live Deployment</span>
-                </span>
+                  <span class="px-2 py-0.5 rounded-md bg-secondary/10 border border-secondary/20 text-secondary font-mono text-[11px] font-semibold inline-flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[13px]">download</span>
+                    <span>50K+</span>
+                  </span>
+                </div>
                 <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
                    href="https://play.google.com/store/apps/details?id=com.cm.rabbithole" rel="noreferrer" target="_blank">
                   <span>Play Store</span>
@@ -670,151 +694,277 @@
               </div>
             </div>
 
-            <!-- Card 5: Collectio — Korean Movies OTT Platform -->
-            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="compose streaming">
+            <!-- Card 5: GoSourcing 365 — Global Trade Hub (10K+) -->
+            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="enterprise" data-downloads="10000">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="px-2.5 py-1 rounded-md bg-primary/15 text-primary border-primary/20 font-mono text-[11px] font-semibold border">Jetpack MVVM</span>
+                    <span class="px-2.5 py-1 rounded-md bg-secondary/15 text-secondary border-secondary/20 font-mono text-[11px] font-semibold border">Global Sourcing</span>
+                    <span class="px-2.5 py-1 rounded-md bg-surface-container border-white/10 text-on-surface-variant font-mono text-[11px] font-semibold border">Trade Catalog</span>
+                  </div>
+                  <span class="material-symbols-outlined text-secondary text-[22px]">swap_horiz</span>
+                </div>
+                
+                <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
+                  GoSourcing 365 — Global Trade Hub
+                </h3>
+                <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
+                  Worldwide B2B digital networking platform for yarn, fabric, apparel, dyestuff, and chemical industries with interactive supplier directories and live trade inquiries.
+                </p>
+                
+                <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
+                  <div class="text-secondary font-semibold">Engineering Highlights:</div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
+                    <span>Hierarchical categorized catalog with multi-facet searching &amp; filtering</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
+                    <span>Enterprise quotation management and direct lead dispatch</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                    </span>
+                    <span>Live</span>
+                  </span>
+                  <span class="px-2 py-0.5 rounded-md bg-secondary/10 border border-secondary/20 text-secondary font-mono text-[11px] font-semibold inline-flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[13px]">download</span>
+                    <span>10K+</span>
+                  </span>
+                </div>
+                <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
+                   href="https://play.google.com/store/apps/details?id=com.ticonsys.gosourcing365" rel="noreferrer" target="_blank">
+                  <span>Play Store</span>
+                  <span class="material-symbols-outlined text-[14px]">north_east</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 6: Groomer Tracker — Trail GPS & Telemetry (10K+) -->
+            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="enterprise" data-downloads="10000">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="px-2.5 py-1 rounded-md bg-tag-compose/15 text-[#60a5fa] border-tag-compose/20 font-mono text-[11px] font-semibold border">GPS Mapping</span>
+                    <span class="px-2.5 py-1 rounded-md bg-secondary/15 text-secondary border-secondary/20 font-mono text-[11px] font-semibold border">Live Fleet</span>
+                    <span class="px-2.5 py-1 rounded-md bg-surface-container border-white/10 text-on-surface-variant font-mono text-[11px] font-semibold border">Offline Maps</span>
+                  </div>
+                  <span class="material-symbols-outlined text-secondary text-[22px]">snowboarding</span>
+                </div>
+                
+                <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
+                  Groomer Tracker — Trail GPS &amp; Telemetry
+                </h3>
+                <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
+                  Live trail tracking application for snowmobile enthusiasts across North America. Displays real-time groomer fleet movements, trail conditions, and grooming status.
+                </p>
+                
+                <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
+                  <div class="text-secondary font-semibold">Engineering Highlights:</div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
+                    <span>High-precision GPS telemetry with live groomer position overlays</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
+                    <span>Offline vector map tile rendering for remote off-grid backcountry trails</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                    </span>
+                    <span>Live</span>
+                  </span>
+                  <span class="px-2 py-0.5 rounded-md bg-secondary/10 border border-secondary/20 text-secondary font-mono text-[11px] font-semibold inline-flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[13px]">download</span>
+                    <span>10K+</span>
+                  </span>
+                </div>
+                <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
+                   href="https://play.google.com/store/apps/details?id=com.groomer.tracker" rel="noreferrer" target="_blank">
+                  <span>Play Store</span>
+                  <span class="material-symbols-outlined text-[14px]">north_east</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 7: Binary Game — Math & Logic Puzzle (1K+) -->
+            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="enterprise" data-downloads="1000">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="px-2.5 py-1 rounded-md bg-primary/15 text-primary border-primary/20 font-mono text-[11px] font-semibold border">Jetpack MVVM</span>
+                    <span class="px-2.5 py-1 rounded-md bg-secondary/15 text-secondary border-secondary/20 font-mono text-[11px] font-semibold border">EdTech Gaming</span>
+                    <span class="px-2.5 py-1 rounded-md bg-surface-container border-white/10 text-on-surface-variant font-mono text-[11px] font-semibold border">Bitwise Logic</span>
+                  </div>
+                  <span class="material-symbols-outlined text-secondary text-[22px]">sports_esports</span>
+                </div>
+                
+                <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
+                  Binary Game — Math &amp; Logic Puzzle
+                </h3>
+                <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
+                  Interactive brain-training educational game built to teach binary conversion, boolean logic gates, and bitwise arithmetic with engaging gamified level progression.
+                </p>
+                
+                <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
+                  <div class="text-secondary font-semibold">Engineering Highlights:</div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
+                    <span>Custom 2D interactive touch canvas and mathematical conversion engine</span>
+                  </div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
+                    <span>Offline local score persistence and multi-difficulty progression algorithms</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                    </span>
+                    <span>Live</span>
+                  </span>
+                  <span class="px-2 py-0.5 rounded-md bg-secondary/10 border border-secondary/20 text-secondary font-mono text-[11px] font-semibold inline-flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[13px]">download</span>
+                    <span>1K+</span>
+                  </span>
+                </div>
+                <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
+                   href="https://play.google.com/store/apps/details?id=com.simecsystemltd.binarygame&hl=en" rel="noreferrer" target="_blank">
+                  <span>Play Store</span>
+                  <span class="material-symbols-outlined text-[14px]">north_east</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Card 8: ResumeIQ — Offline AI Interview Prep (10+) -->
+            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="compose enterprise" data-downloads="10">
               <div>
                 <div class="flex items-center justify-between mb-4">
                   <div class="flex flex-wrap items-center gap-2">
                     <span class="px-2.5 py-1 rounded-md bg-tag-compose/15 text-[#60a5fa] border-tag-compose/20 font-mono text-[11px] font-semibold border">Compose</span>
                     <span class="px-2.5 py-1 rounded-md bg-primary/15 text-primary border-primary/20 font-mono text-[11px] font-semibold border">MVI</span>
-                    <span class="px-2.5 py-1 rounded-md bg-secondary/15 text-secondary border-secondary/20 font-mono text-[11px] font-semibold border">Leanback TV</span>
+                    <span class="px-2.5 py-1 rounded-md bg-tertiary/20 text-tertiary-fixed border-tertiary/20 font-mono text-[11px] font-semibold border">Gemma 4 AI</span>
                   </div>
-                  <span class="material-symbols-outlined text-secondary text-[22px]">movie</span>
+                  <span class="material-symbols-outlined text-secondary text-[22px]">psychology</span>
                 </div>
                 
                 <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
-                  Collectio — Korean Movies OTT Platform
+                  ResumeIQ — Offline AI Interview Prep
                 </h3>
                 <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
-                  Specialized OTT streaming platform serving licensed Korean movies, dramas, and entertainment series with dual target optimization for both mobile and Android TV Leanback devices.
+                  Generates tailored mock interview questions directly from the candidate's resume completely on-device without an active internet connection. Designed for university graduates and experienced tech professionals.
                 </p>
                 
                 <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
                   <div class="text-secondary font-semibold">Engineering Highlights:</div>
                   <div class="flex items-center gap-1.5">
                     <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Paging 3 infinite scroll catalog with customized ExoPlayer playback</span>
+                    <span>Embedded Gemma 4 AI model for zero-latency inference</span>
                   </div>
                   <div class="flex items-center gap-1.5">
                     <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Hilt dependency injection with reactive StateFlow state pipeline</span>
+                    <span>Clean MVI unidirectional state flow pattern</span>
                   </div>
                 </div>
               </div>
               
-              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
-                  <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                    </span>
+                    <span>Live</span>
                   </span>
-                  <span>Live Deployment</span>
-                </span>
+                  <span class="px-2 py-0.5 rounded-md bg-secondary/10 border border-secondary/20 text-secondary font-mono text-[11px] font-semibold inline-flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[13px]">download</span>
+                    <span>10+</span>
+                  </span>
+                </div>
                 <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
-                   href="https://play.google.com/store/apps/details?id=com.ticonsys.collectio&hl=en" rel="noreferrer" target="_blank">
+                   href="https://play.google.com/store/apps/details?id=com.dutchman.resumeiq" rel="noreferrer" target="_blank">
                   <span>Play Store</span>
                   <span class="material-symbols-outlined text-[14px]">north_east</span>
                 </a>
               </div>
             </div>
 
-            <!-- Card 6: AmarStock — Stock Analytics Engine -->
-            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="enterprise">
-              <div>
-                <div class="flex items-center justify-between mb-4">
-                  <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-2.5 py-1 rounded-md bg-primary/15 text-primary border-primary/20 font-mono text-[11px] font-semibold border">Fintech</span>
-                    <span class="px-2.5 py-1 rounded-md bg-tag-webrtc/20 text-[#ff8080] border-tag-webrtc/20 font-mono text-[11px] font-semibold border">WebSocket</span>
-                    <span class="px-2.5 py-1 rounded-md bg-secondary/15 text-secondary border-secondary/20 font-mono text-[11px] font-semibold border">Room DB</span>
-                  </div>
-                  <span class="material-symbols-outlined text-secondary text-[22px]">trending_up</span>
-                </div>
-                
-                <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
-                  AmarStock — Stock Analytics Engine
-                </h3>
-                <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
-                  Comprehensive financial data application delivering real-time stock quotes, interactive technical chart analysis, and market sentiment summaries for equity traders.
-                </p>
-                
-                <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
-                  <div class="text-secondary font-semibold">Engineering Highlights:</div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Resilient sub-second WebSocket feed with reconnection fallback</span>
-                  </div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Single Source of Truth architecture combining Room DB & WorkManager</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
-                  <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                  </span>
-                  <span>Live Deployment</span>
-                </span>
-                <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
-                   href="https://play.google.com/store/apps/details?id=com.amarstock.android" rel="noreferrer" target="_blank">
-                  <span>Play Store</span>
-                  <span class="material-symbols-outlined text-[14px]">north_east</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Card 7: Retina LMS — Medical & Dental Exam Prep -->
-            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="flutter enterprise">
+            <!-- Card 9: SAFE IN — AI Legal Defense & Guidance (10+) -->
+            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="flutter enterprise" data-downloads="10">
               <div>
                 <div class="flex items-center justify-between mb-4">
                   <div class="flex flex-wrap items-center gap-2">
                     <span class="px-2.5 py-1 rounded-md bg-tag-flutter/25 text-secondary border-tag-flutter/30 font-mono text-[11px] font-semibold border">Flutter</span>
                     <span class="px-2.5 py-1 rounded-md bg-primary/15 text-primary border-primary/20 font-mono text-[11px] font-semibold border">MVI</span>
-                    <span class="px-2.5 py-1 rounded-md bg-surface-container border-white/10 text-on-surface-variant font-mono text-[11px] font-semibold border">EdTech LMS</span>
+                    <span class="px-2.5 py-1 rounded-md bg-surface-container border-white/10 text-on-surface-variant font-mono text-[11px] font-semibold border">Multi-Language</span>
                   </div>
-                  <span class="material-symbols-outlined text-secondary text-[22px]">school</span>
+                  <span class="material-symbols-outlined text-secondary text-[22px]">gavel</span>
                 </div>
                 
                 <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
-                  Retina LMS — Medical & Dental Exam Prep
+                  SAFE IN — AI Legal Defense &amp; Guidance
                 </h3>
                 <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
-                  Comprehensive learning management mobile platform for medical and dental admission candidates across Bangladesh, delivering recorded video lectures and practice tests.
+                  Automating legal defense rights and delivering proactive, AI-driven legal guidance to optimize corporate risk management and executive decision-making across enterprise operations.
                 </p>
                 
                 <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
                   <div class="text-secondary font-semibold">Engineering Highlights:</div>
                   <div class="flex items-center gap-1.5">
                     <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Custom Video & YouTube player integration with adaptive streaming</span>
+                    <span>Production Flutter architecture with unidirectional MVI pattern</span>
                   </div>
                   <div class="flex items-center gap-1.5">
                     <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Dio networking with JWT refresh interceptors and FCM notifications</span>
+                    <span>Dynamic multi-language localization &amp; dependency injection</span>
                   </div>
                 </div>
               </div>
               
-              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
-                  <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between gap-2">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                    </span>
+                    <span>Live</span>
                   </span>
-                  <span>Live Deployment</span>
-                </span>
+                  <span class="px-2 py-0.5 rounded-md bg-secondary/10 border border-secondary/20 text-secondary font-mono text-[11px] font-semibold inline-flex items-center gap-1">
+                    <span class="material-symbols-outlined text-[13px]">download</span>
+                    <span>10+</span>
+                  </span>
+                </div>
                 <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
-                   href="https://play.google.com/store/apps/details?id=com.retinalms" rel="noreferrer" target="_blank">
+                   href="https://play.google.com/store/apps/details?id=com.aicess.maisafe" rel="noreferrer" target="_blank">
                   <span>Play Store</span>
                   <span class="material-symbols-outlined text-[14px]">north_east</span>
                 </a>
               </div>
             </div>
 
-            <!-- Card 8: OneEight Vendor — Live Commerce Hub -->
+            <!-- Card 10: OneEight Vendor — Live Commerce Hub -->
             <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="flutter streaming">
               <div>
                 <div class="flex items-center justify-between mb-4">
@@ -857,438 +1007,6 @@
                 <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
                    href="https://apps.apple.com/jp/app/oneeight-vendor/id6446922369?l=en-US" rel="noreferrer" target="_blank">
                   <span>App Store</span>
-                  <span class="material-symbols-outlined text-[14px]">north_east</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Card 9: GoSourcing-Bangladesh — Global B2B Platform -->
-            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="enterprise">
-              <div>
-                <div class="flex items-center justify-between mb-4">
-                  <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-2.5 py-1 rounded-md bg-primary/15 text-primary border-primary/20 font-mono text-[11px] font-semibold border">Jetpack MVVM</span>
-                    <span class="px-2.5 py-1 rounded-md bg-secondary/15 text-secondary border-secondary/20 font-mono text-[11px] font-semibold border">B2B Portal</span>
-                    <span class="px-2.5 py-1 rounded-md bg-surface-container border-white/10 text-on-surface-variant font-mono text-[11px] font-semibold border">Apparel Trade</span>
-                  </div>
-                  <span class="material-symbols-outlined text-secondary text-[22px]">hub</span>
-                </div>
-                
-                <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
-                  GoSourcing-Bangladesh — Global B2B Platform
-                </h3>
-                <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
-                  US-based international B2B sourcing and trade networking platform connecting apparel buyers worldwide directly with verified Bangladeshi textile and garment manufacturers.
-                </p>
-                
-                <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
-                  <div class="text-secondary font-semibold">Engineering Highlights:</div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Direct buyer-manufacturer RFQ negotiation and product inquiry engine</span>
-                  </div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Jetpack MVVM with asynchronous Retrofit / Coroutines data layer</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
-                  <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                  </span>
-                  <span>Live Deployment</span>
-                </span>
-                <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
-                   href="https://play.google.com/store/apps/details?id=com.ticonsys.gosourcingbd" rel="noreferrer" target="_blank">
-                  <span>Play Store</span>
-                  <span class="material-symbols-outlined text-[14px]">north_east</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Card 10: GoSourcing 365 — Global Trade Hub -->
-            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="enterprise">
-              <div>
-                <div class="flex items-center justify-between mb-4">
-                  <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-2.5 py-1 rounded-md bg-primary/15 text-primary border-primary/20 font-mono text-[11px] font-semibold border">Jetpack MVVM</span>
-                    <span class="px-2.5 py-1 rounded-md bg-secondary/15 text-secondary border-secondary/20 font-mono text-[11px] font-semibold border">Global Sourcing</span>
-                    <span class="px-2.5 py-1 rounded-md bg-surface-container border-white/10 text-on-surface-variant font-mono text-[11px] font-semibold border">Trade Catalog</span>
-                  </div>
-                  <span class="material-symbols-outlined text-secondary text-[22px]">swap_horiz</span>
-                </div>
-                
-                <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
-                  GoSourcing 365 — Global Trade Hub
-                </h3>
-                <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
-                  Worldwide B2B digital networking platform for yarn, fabric, apparel, dyestuff, and chemical industries with interactive supplier directories and live trade inquiries.
-                </p>
-                
-                <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
-                  <div class="text-secondary font-semibold">Engineering Highlights:</div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Hierarchical categorized catalog with multi-facet searching & filtering</span>
-                  </div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Enterprise quotation management and direct lead dispatch</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
-                  <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                  </span>
-                  <span>Live Deployment</span>
-                </span>
-                <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
-                   href="https://play.google.com/store/apps/details?id=com.ticonsys.gosourcing365" rel="noreferrer" target="_blank">
-                  <span>Play Store</span>
-                  <span class="material-symbols-outlined text-[14px]">north_east</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Card 11: Groomer Tracker — Trail GPS & Telemetry -->
-            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="enterprise">
-              <div>
-                <div class="flex items-center justify-between mb-4">
-                  <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-2.5 py-1 rounded-md bg-tag-compose/15 text-[#60a5fa] border-tag-compose/20 font-mono text-[11px] font-semibold border">GPS Mapping</span>
-                    <span class="px-2.5 py-1 rounded-md bg-secondary/15 text-secondary border-secondary/20 font-mono text-[11px] font-semibold border">Live Fleet</span>
-                    <span class="px-2.5 py-1 rounded-md bg-surface-container border-white/10 text-on-surface-variant font-mono text-[11px] font-semibold border">Offline Maps</span>
-                  </div>
-                  <span class="material-symbols-outlined text-secondary text-[22px]">snowboarding</span>
-                </div>
-                
-                <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
-                  Groomer Tracker — Trail GPS & Telemetry
-                </h3>
-                <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
-                  Live trail tracking application for snowmobile enthusiasts across North America. Displays real-time groomer fleet movements, trail conditions, and grooming status.
-                </p>
-                
-                <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
-                  <div class="text-secondary font-semibold">Engineering Highlights:</div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>High-precision GPS telemetry with live groomer position overlays</span>
-                  </div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Offline vector map tile rendering for remote off-grid backcountry trails</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
-                  <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                  </span>
-                  <span>Live Deployment</span>
-                </span>
-                <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
-                   href="https://play.google.com/store/apps/details?id=com.groomer.tracker" rel="noreferrer" target="_blank">
-                  <span>Play Store</span>
-                  <span class="material-symbols-outlined text-[14px]">north_east</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Card 12: GDM Event — Enterprise Event Management -->
-            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="enterprise">
-              <div>
-                <div class="flex items-center justify-between mb-4">
-                  <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-2.5 py-1 rounded-md bg-primary/15 text-primary border-primary/20 font-mono text-[11px] font-semibold border">Jetpack MVVM</span>
-                    <span class="px-2.5 py-1 rounded-md bg-secondary/15 text-secondary border-secondary/20 font-mono text-[11px] font-semibold border">QR Check-In</span>
-                    <span class="px-2.5 py-1 rounded-md bg-surface-container border-white/10 text-on-surface-variant font-mono text-[11px] font-semibold border">Event Ops</span>
-                  </div>
-                  <span class="material-symbols-outlined text-secondary text-[22px]">event_available</span>
-                </div>
-                
-                <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
-                  GDM Event — Enterprise Event Management
-                </h3>
-                <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
-                  Corporate event scheduling, attendee coordination, and ticketing platform engineered for swift onsite access control, real-time headcounts, and attendee itineraries.
-                </p>
-                
-                <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
-                  <div class="text-secondary font-semibold">Engineering Highlights:</div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Sub-second camera QR ticket scanning and verification engine</span>
-                  </div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Live synchronization of attendee check-ins and session schedules</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
-                  <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                  </span>
-                  <span>Live Deployment</span>
-                </span>
-                <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
-                   href="https://play.google.com/store/apps/details?id=com.gdm.ragevent" rel="noreferrer" target="_blank">
-                  <span>Play Store</span>
-                  <span class="material-symbols-outlined text-[14px]">north_east</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Card 13: GDM Survey — Field Audit & Data Platform -->
-            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="enterprise">
-              <div>
-                <div class="flex items-center justify-between mb-4">
-                  <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-2.5 py-1 rounded-md bg-primary/15 text-primary border-primary/20 font-mono text-[11px] font-semibold border">Jetpack MVVM</span>
-                    <span class="px-2.5 py-1 rounded-md bg-secondary/15 text-secondary border-secondary/20 font-mono text-[11px] font-semibold border">Offline Forms</span>
-                    <span class="px-2.5 py-1 rounded-md bg-surface-container border-white/10 text-on-surface-variant font-mono text-[11px] font-semibold border">Geotagging</span>
-                  </div>
-                  <span class="material-symbols-outlined text-secondary text-[22px]">fact_check</span>
-                </div>
-                
-                <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
-                  GDM Survey — Field Audit & Data Platform
-                </h3>
-                <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
-                  Mission-critical mobile data acquisition and field audit platform enabling inspectors to complete dynamic surveys, log GPS coordinates, and attach media offline.
-                </p>
-                
-                <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
-                  <div class="text-secondary font-semibold">Engineering Highlights:</div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Dynamic conditional branching form engine with local Room DB persistence</span>
-                  </div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Automated background data synchronization with upload retry queues</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
-                  <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                  </span>
-                  <span>Live Deployment</span>
-                </span>
-                <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
-                   href="https://play.google.com/store/apps/details?id=com.gdm.ragsurvey" rel="noreferrer" target="_blank">
-                  <span>Play Store</span>
-                  <span class="material-symbols-outlined text-[14px]">north_east</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Card 14: সাপ্তাহিক সিমেক — Weekly SIMEC News -->
-            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="enterprise streaming">
-              <div>
-                <div class="flex items-center justify-between mb-4">
-                  <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-2.5 py-1 rounded-md bg-primary/15 text-primary border-primary/20 font-mono text-[11px] font-semibold border">Jetpack MVVM</span>
-                    <span class="px-2.5 py-1 rounded-md bg-secondary/15 text-secondary border-secondary/20 font-mono text-[11px] font-semibold border">Media Feed</span>
-                    <span class="px-2.5 py-1 rounded-md bg-surface-container border-white/10 text-on-surface-variant font-mono text-[11px] font-semibold border">Push Alerts</span>
-                  </div>
-                  <span class="material-symbols-outlined text-secondary text-[22px]">newspaper</span>
-                </div>
-                
-                <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
-                  সাপ্তাহিক সিমেক — Weekly SIMEC News
-                </h3>
-                <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
-                  Digital newspaper application publishing investigative news, editorial coverage, and multimedia feeds from Uttara, Dhaka with instant alerts and clean reading modes.
-                </p>
-                
-                <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
-                  <div class="text-secondary font-semibold">Engineering Highlights:</div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Fast article reader with offline caching and responsive typography</span>
-                  </div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Firebase Cloud Messaging (FCM) integration for real-time news alerts</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
-                  <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                  </span>
-                  <span>Live Deployment</span>
-                </span>
-                <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
-                   href="https://play.google.com/store/apps/details?id=com.simecsystemltd.simecnews" rel="noreferrer" target="_blank">
-                  <span>Play Store</span>
-                  <span class="material-symbols-outlined text-[14px]">north_east</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Card 15: BZRider — On-Demand Ride Hailing -->
-            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="enterprise">
-              <div>
-                <div class="flex items-center justify-between mb-4">
-                  <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-2.5 py-1 rounded-md bg-primary/15 text-primary border-primary/20 font-mono text-[11px] font-semibold border">Jetpack MVVM</span>
-                    <span class="px-2.5 py-1 rounded-md bg-tag-compose/15 text-[#60a5fa] border-tag-compose/20 font-mono text-[11px] font-semibold border">Google Maps SDK</span>
-                    <span class="px-2.5 py-1 rounded-md bg-secondary/15 text-secondary border-secondary/20 font-mono text-[11px] font-semibold border">Live Routing</span>
-                  </div>
-                  <span class="material-symbols-outlined text-secondary text-[22px]">two_wheeler</span>
-                </div>
-                
-                <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
-                  BZRider — On-Demand Ride Hailing
-                </h3>
-                <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
-                  Full-featured ride-hailing and commuter transit platform (similar to Pathao/Uber) featuring live vehicle tracking, fare calculation, driver matching, and booking.
-                </p>
-                
-                <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
-                  <div class="text-secondary font-semibold">Engineering Highlights:</div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Real-time GPS vehicle location tracking and smooth polyline route rendering</span>
-                  </div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>WebSocket connection pipeline for instant dispatch and driver ETA updates</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
-                  <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                  </span>
-                  <span>Live Deployment</span>
-                </span>
-                <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
-                   href="https://play.google.com/store/apps/details?id=com.simecsystemltd.rider" rel="noreferrer" target="_blank">
-                  <span>Play Store</span>
-                  <span class="material-symbols-outlined text-[14px]">north_east</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Card 16: BZRider Driver — Fleet Dispatch Partner -->
-            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="enterprise">
-              <div>
-                <div class="flex items-center justify-between mb-4">
-                  <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-2.5 py-1 rounded-md bg-primary/15 text-primary border-primary/20 font-mono text-[11px] font-semibold border">Jetpack MVVM</span>
-                    <span class="px-2.5 py-1 rounded-md bg-tag-compose/15 text-[#60a5fa] border-tag-compose/20 font-mono text-[11px] font-semibold border">Foreground Service</span>
-                    <span class="px-2.5 py-1 rounded-md bg-secondary/15 text-secondary border-secondary/20 font-mono text-[11px] font-semibold border">Turn-by-Turn</span>
-                  </div>
-                  <span class="material-symbols-outlined text-secondary text-[22px]">sports_motorsports</span>
-                </div>
-                
-                <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
-                  BZRider Driver — Fleet Dispatch Partner
-                </h3>
-                <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
-                  Dedicated driver companion application featuring instant ride request modals, turn-by-turn navigation, real-time fare metering, and daily earning ledgers.
-                </p>
-                
-                <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
-                  <div class="text-secondary font-semibold">Engineering Highlights:</div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Continuous foreground location tracking service with battery optimization</span>
-                  </div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Instant trip acceptance state machine and automated daily earnings ledger</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
-                  <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                  </span>
-                  <span>Live Deployment</span>
-                </span>
-                <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
-                   href="https://play.google.com/store/apps/details?id=com.simecsystemltd.driver" rel="noreferrer" target="_blank">
-                  <span>Play Store</span>
-                  <span class="material-symbols-outlined text-[14px]">north_east</span>
-                </a>
-              </div>
-            </div>
-
-            <!-- Card 17: Binary Game — Math & Logic Puzzle -->
-            <div class="project-item flex flex-col justify-between p-6 rounded-2xl glass-card group" data-category="enterprise">
-              <div>
-                <div class="flex items-center justify-between mb-4">
-                  <div class="flex flex-wrap items-center gap-2">
-                    <span class="px-2.5 py-1 rounded-md bg-primary/15 text-primary border-primary/20 font-mono text-[11px] font-semibold border">Jetpack MVVM</span>
-                    <span class="px-2.5 py-1 rounded-md bg-secondary/15 text-secondary border-secondary/20 font-mono text-[11px] font-semibold border">EdTech Gaming</span>
-                    <span class="px-2.5 py-1 rounded-md bg-surface-container border-white/10 text-on-surface-variant font-mono text-[11px] font-semibold border">Bitwise Logic</span>
-                  </div>
-                  <span class="material-symbols-outlined text-secondary text-[22px]">sports_esports</span>
-                </div>
-                
-                <h3 class="font-headline text-[20px] font-bold text-text-primary group-hover:text-primary transition-colors mb-2">
-                  Binary Game — Math & Logic Puzzle
-                </h3>
-                <p class="font-body text-[13px] text-on-surface-variant leading-relaxed mb-5">
-                  Interactive brain-training educational game built to teach binary conversion, boolean logic gates, and bitwise arithmetic with engaging gamified level progression.
-                </p>
-                
-                <div class="p-3.5 rounded-xl bg-surface-container-low border border-white/5 mb-5 font-mono text-[11px] text-text-muted space-y-1.5">
-                  <div class="text-secondary font-semibold">Engineering Highlights:</div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Custom 2D interactive touch canvas and mathematical conversion engine</span>
-                  </div>
-                  <div class="flex items-center gap-1.5">
-                    <span class="w-1 h-1 rounded-full bg-secondary"></span>
-                    <span>Offline local score persistence and multi-difficulty progression algorithms</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between">
-                <span class="font-mono text-[11px] text-primary flex items-center gap-1.5">
-                  <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-                  </span>
-                  <span>Live Deployment</span>
-                </span>
-                <a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high border border-white/10 text-on-surface text-[12px] font-mono hover:text-primary transition-colors" 
-                   href="https://play.google.com/store/apps/details?id=com.simecsystemltd.binarygame&hl=en" rel="noreferrer" target="_blank">
-                  <span>Play Store</span>
                   <span class="material-symbols-outlined text-[14px]">north_east</span>
                 </a>
               </div>
@@ -1503,6 +1221,132 @@
                 <div class="mt-3 pt-2 border-t border-white/[0.04] font-mono text-[10px] text-text-muted flex items-center justify-between">
                   <span>Enterprise ERP</span>
                   <span class="text-secondary font-medium">Production Ops</span>
+                </div>
+              </div>
+
+              <!-- Microsystem 13: Collectio — Korean Movies OTT Platform -->
+              <div class="p-4 rounded-xl bg-surface-container-low border border-white/5 hover:border-primary/30 transition-all flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-2 mb-1">
+                    <div class="font-headline text-[18px] text-text-primary font-bold">Collectio — Korean Movies OTT Platform</div>
+                    <a href="https://play.google.com/store/apps/details?id=com.ticonsys.collectio&hl=en" target="_blank" rel="noreferrer" class="text-text-muted hover:text-primary transition-colors inline-flex items-center flex-shrink-0" title="Play Store">
+                      <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                    </a>
+                  </div>
+                  <div class="font-mono text-[11px] text-primary font-medium mb-1.5">Compose • MVI • Leanback TV</div>
+                  <p class="font-body text-[13px] text-on-surface-variant leading-snug">Specialized OTT streaming platform serving licensed Korean movies, dramas, and entertainment series for mobile and Android TV Leanback devices.</p>
+                </div>
+                <div class="mt-3 pt-2 border-t border-white/[0.04] font-mono text-[10px] text-text-muted flex items-center justify-between">
+                  <span>OTT Streaming</span>
+                  <span class="text-secondary font-medium">Play Store</span>
+                </div>
+              </div>
+
+              <!-- Microsystem 14: GoSourcing-Bangladesh — Global B2B Platform -->
+              <div class="p-4 rounded-xl bg-surface-container-low border border-white/5 hover:border-secondary/30 transition-all flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-2 mb-1">
+                    <div class="font-headline text-[18px] text-text-primary font-bold">GoSourcing-Bangladesh — Global B2B Platform</div>
+                    <a href="https://play.google.com/store/apps/details?id=com.ticonsys.gosourcingbd" target="_blank" rel="noreferrer" class="text-text-muted hover:text-primary transition-colors inline-flex items-center flex-shrink-0" title="Play Store">
+                      <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                    </a>
+                  </div>
+                  <div class="font-mono text-[11px] text-secondary font-medium mb-1.5">Jetpack MVVM • B2B Portal • Apparel Trade</div>
+                  <p class="font-body text-[13px] text-on-surface-variant leading-snug">US-based international B2B sourcing and trade networking platform connecting apparel buyers worldwide directly with verified Bangladeshi manufacturers.</p>
+                </div>
+                <div class="mt-3 pt-2 border-t border-white/[0.04] font-mono text-[10px] text-text-muted flex items-center justify-between">
+                  <span>B2B Trade</span>
+                  <span class="text-secondary font-medium">Play Store</span>
+                </div>
+              </div>
+
+              <!-- Microsystem 15: GDM Event — Enterprise Event Management -->
+              <div class="p-4 rounded-xl bg-surface-container-low border border-white/5 hover:border-primary/30 transition-all flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-2 mb-1">
+                    <div class="font-headline text-[18px] text-text-primary font-bold">GDM Event — Enterprise Event Management</div>
+                    <a href="https://play.google.com/store/apps/details?id=com.gdm.ragevent" target="_blank" rel="noreferrer" class="text-text-muted hover:text-primary transition-colors inline-flex items-center flex-shrink-0" title="Play Store">
+                      <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                    </a>
+                  </div>
+                  <div class="font-mono text-[11px] text-primary font-medium mb-1.5">Jetpack MVVM • QR Check-In • Event Ops</div>
+                  <p class="font-body text-[13px] text-on-surface-variant leading-snug">Corporate event scheduling, attendee coordination, and ticketing platform engineered for swift onsite access control and real-time headcounts.</p>
+                </div>
+                <div class="mt-3 pt-2 border-t border-white/[0.04] font-mono text-[10px] text-text-muted flex items-center justify-between">
+                  <span>Enterprise Events</span>
+                  <span class="text-secondary font-medium">Play Store</span>
+                </div>
+              </div>
+
+              <!-- Microsystem 16: GDM Survey — Field Audit & Data Platform -->
+              <div class="p-4 rounded-xl bg-surface-container-low border border-white/5 hover:border-secondary/30 transition-all flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-2 mb-1">
+                    <div class="font-headline text-[18px] text-text-primary font-bold">GDM Survey — Field Audit &amp; Data Platform</div>
+                    <a href="https://play.google.com/store/apps/details?id=com.gdm.ragsurvey" target="_blank" rel="noreferrer" class="text-text-muted hover:text-primary transition-colors inline-flex items-center flex-shrink-0" title="Play Store">
+                      <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                    </a>
+                  </div>
+                  <div class="font-mono text-[11px] text-secondary font-medium mb-1.5">Jetpack MVVM • Offline Forms • Geotagging</div>
+                  <p class="font-body text-[13px] text-on-surface-variant leading-snug">Mission-critical mobile data acquisition and field audit platform enabling inspectors to complete dynamic surveys, log GPS coordinates, and attach media offline.</p>
+                </div>
+                <div class="mt-3 pt-2 border-t border-white/[0.04] font-mono text-[10px] text-text-muted flex items-center justify-between">
+                  <span>Field Audit</span>
+                  <span class="text-secondary font-medium">Play Store</span>
+                </div>
+              </div>
+
+              <!-- Microsystem 17: সাপ্তাহিক সিমেক — Weekly SIMEC News -->
+              <div class="p-4 rounded-xl bg-surface-container-low border border-white/5 hover:border-primary/30 transition-all flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-2 mb-1">
+                    <div class="font-headline text-[18px] text-text-primary font-bold">সাপ্তাহিক সিমেক — Weekly SIMEC News</div>
+                    <a href="https://play.google.com/store/apps/details?id=com.simecsystemltd.simecnews" target="_blank" rel="noreferrer" class="text-text-muted hover:text-primary transition-colors inline-flex items-center flex-shrink-0" title="Play Store">
+                      <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                    </a>
+                  </div>
+                  <div class="font-mono text-[11px] text-primary font-medium mb-1.5">Jetpack MVVM • Media Feed • Push Alerts</div>
+                  <p class="font-body text-[13px] text-on-surface-variant leading-snug">Digital newspaper application publishing investigative news, editorial coverage, and multimedia feeds from Uttara, Dhaka with instant FCM alerts.</p>
+                </div>
+                <div class="mt-3 pt-2 border-t border-white/[0.04] font-mono text-[10px] text-text-muted flex items-center justify-between">
+                  <span>Digital Media</span>
+                  <span class="text-secondary font-medium">Play Store</span>
+                </div>
+              </div>
+
+              <!-- Microsystem 18: BZRider — On-Demand Ride Hailing -->
+              <div class="p-4 rounded-xl bg-surface-container-low border border-white/5 hover:border-secondary/30 transition-all flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-2 mb-1">
+                    <div class="font-headline text-[18px] text-text-primary font-bold">BZRider — On-Demand Ride Hailing</div>
+                    <a href="https://play.google.com/store/apps/details?id=com.simecsystemltd.rider" target="_blank" rel="noreferrer" class="text-text-muted hover:text-primary transition-colors inline-flex items-center flex-shrink-0" title="Play Store">
+                      <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                    </a>
+                  </div>
+                  <div class="font-mono text-[11px] text-secondary font-medium mb-1.5">Jetpack MVVM • Google Maps SDK • Live Routing</div>
+                  <p class="font-body text-[13px] text-on-surface-variant leading-snug">Full-featured ride-hailing and commuter transit platform featuring live GPS vehicle tracking, fare calculation, driver matching, and WebSocket dispatch.</p>
+                </div>
+                <div class="mt-3 pt-2 border-t border-white/[0.04] font-mono text-[10px] text-text-muted flex items-center justify-between">
+                  <span>Ride Hailing</span>
+                  <span class="text-secondary font-medium">Play Store</span>
+                </div>
+              </div>
+
+              <!-- Microsystem 19: BZRider Driver — Fleet Dispatch Partner -->
+              <div class="p-4 rounded-xl bg-surface-container-low border border-white/5 hover:border-primary/30 transition-all flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center justify-between gap-2 mb-1">
+                    <div class="font-headline text-[18px] text-text-primary font-bold">BZRider Driver — Fleet Dispatch Partner</div>
+                    <a href="https://play.google.com/store/apps/details?id=com.simecsystemltd.driver" target="_blank" rel="noreferrer" class="text-text-muted hover:text-primary transition-colors inline-flex items-center flex-shrink-0" title="Play Store">
+                      <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+                    </a>
+                  </div>
+                  <div class="font-mono text-[11px] text-primary font-medium mb-1.5">Jetpack MVVM • Foreground Service • Turn-by-Turn</div>
+                  <p class="font-body text-[13px] text-on-surface-variant leading-snug">Dedicated driver companion application featuring instant ride request modals, continuous location tracking, turn-by-turn navigation, and daily earning ledgers.</p>
+                </div>
+                <div class="mt-3 pt-2 border-t border-white/[0.04] font-mono text-[10px] text-text-muted flex items-center justify-between">
+                  <span>Fleet Dispatch</span>
+                  <span class="text-secondary font-medium">Play Store</span>
                 </div>
               </div>
             </div>
